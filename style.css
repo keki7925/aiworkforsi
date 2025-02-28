@@ -1,0 +1,78 @@
+/* 預設樣式（桌機版） */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px; /* 增加與 p 之間的距離 */
+}
+
+
+.profile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s;
+    border:2px solid #fae2b1;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ca7c37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease-in-out; /* 只保留這個 */
+}
+
+button:hover {
+    background: #d6a57a;
+    transform: scale(1.05); /* 輕微放大 */
+}
+
+
+
+@media (max-width: 768px) {
+    .profile {
+        max-width: 90%;
+        padding: 15px;
+        text-align: left; /* 讓文字對齊左側，閱讀更舒適 */
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 0 auto; /* 讓圖片保持置中 */
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify; /* 讓文字左右對齊，更專業 */
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        text-align: left; /* 讓按鈕靠左 */
+    }
+}
+
+
